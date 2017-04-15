@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Google</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button id="authorize-button" (click)="signInClick()">Authorize</button>
+  <button ion-button id="signout-button" (click)="signOutClick()">Sign Out</button>
+  <button ion-button (click)="makeApiCall2()">Get Drive</button>
+
+  <h2 id="name">
+    Welcome, {{user.username}}
+  </h2>
+  <ul id="files"> Files:
+    
+  </ul>
+
+</ion-content>
