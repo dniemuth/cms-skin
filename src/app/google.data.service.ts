@@ -12,6 +12,13 @@ export class DataService {
     constructor() { }
 
     getUser() {
+        if(gapi.auth2.getAuthInstance().isSignedIn.get()) {
+            console.log('is logged in');
+        }
+        else {
+            console.log('is not logged in');
+            
+        }
     }
 
     loadClient() {
